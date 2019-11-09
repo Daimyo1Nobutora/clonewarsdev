@@ -1,0 +1,141 @@
+####CW Capital ships####
+equipments = {
+
+	carrier = {
+		year = 1922
+
+		is_archetype = yes
+		is_buildable = no
+		type = carrier
+		group_by = archetype
+		
+		interface_category = interface_category_capital_ships
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		ap_attack = 12
+		attack = 12
+		fire_range = 26
+		torpedo_attack = 0
+		shore_bombardment = 4
+		
+		anti_air_attack = 6
+		
+		armor_value = 12
+		evasion = 20
+		
+		surface_detection = 12
+		sub_detection = 5
+		surface_visibility = 20
+		naval_speed = 22
+		reliability = 0.80
+		
+		naval_range = 7500
+		
+		max_strength = 150
+		
+		port_capacity_usage = 1
+		
+		build_cost_ic = 4600
+		resources = {
+			oil = 3
+			steel = 5
+		}
+		
+		manpower = 7000
+	}
+
+	carrier_1 = {
+		year = 1922
+
+		archetype = carrier
+		priority = 40
+		
+	}
+	
+	carrier_2 = {
+		year = 1936
+
+		archetype = carrier
+		type = carrier
+		parent = carrier_1
+		priority = 40
+		carrier_size = 200
+
+		ap_attack = 14
+		attack = 16
+		fire_range = 28
+		torpedo_attack = 0
+		shore_bombardment = 6
+		
+		anti_air_attack = 8
+		
+		armor_value = 14
+		evasion = 25
+		
+		surface_detection = 15
+		sub_detection = 5
+		surface_visibility = 20
+		naval_speed = 30
+		reliability = 0.85
+
+		naval_range = 9000
+		
+		max_strength = 175
+		
+		port_capacity_usage = 1
+
+		build_cost_ic = 4900
+		resources = {
+			oil = 3
+			steel = 6
+		}		
+		manpower = 8000
+	}
+	
+	carrier_3 = {
+		year = 1940
+
+		archetype = carrier
+		parent = carrier_2
+		priority = 40
+		type = carrier
+		carrier_size = 250
+
+		ap_attack = 16
+		attack = 18
+		fire_range = 30
+		torpedo_attack = 0
+		shore_bombardment = 5
+		
+		anti_air_attack = 12
+		
+		armor_value = 16
+		evasion = 28
+		
+		surface_detection = 25
+		sub_detection = 5
+		surface_visibility = 20
+		naval_speed = 33
+		reliability = 0.90
+
+		naval_range = 4500
+		
+		max_strength = 200
+		
+		port_capacity_usage = 1
+
+		build_cost_ic = 5200
+		resources = {
+			oil = 3
+			steel = 6
+		}		
+		manpower = 10000
+	}
+	
+}
