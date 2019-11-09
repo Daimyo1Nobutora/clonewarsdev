@@ -63,3 +63,7 @@ FON = {
 	color = rgb { 15 15 120 }
 	color_ui = rgb { 35 35 140 }
 }
+HON = {
+	color = rgb { 190 190 10 }
+	color_ui = rgb { 200 200 30 }
+}
