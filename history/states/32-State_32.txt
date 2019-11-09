@@ -8,6 +8,13 @@ state={
 	manpower=3000000000
 	buildings_max_level_factor=1.000
 	state_category = metropolis
+	resources={
+		steel = 10
+		aluminium = 50
+		rubber = 10
+		tungsten = 50
+		oil = 80
+	}
    	history = {
 	owner = CRL
 	buildings = {

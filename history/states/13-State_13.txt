@@ -8,7 +8,13 @@ state={
 	manpower=65000000000
 	buildings_max_level_factor=1.000
 	state_category = megalopolis
-
+	resources={
+		steel = 20
+		aluminium = 15
+		rubber = 5
+		tungsten = 5
+		oil = 15
+	}
    	 history = {
 	owner = BRN
 	buildings = {

@@ -1,3 +1,4 @@
+###duro
 state={
 	id=31
 	name="STATE_31"
@@ -7,6 +8,13 @@ state={
 	manpower=1850000000
 	buildings_max_level_factor=1.000
 	state_category = city
+	resources={
+		steel = 10
+		aluminium = 30
+		rubber = 20
+		tungsten = 30
+		oil = 50
+	}
    	history = {
 	owner = CIS
 	buildings = {

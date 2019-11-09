@@ -9,12 +9,11 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = megalopolis
 	resources={
-		oil=700
-		aluminium=700
-		rubber=700
-		tungsten=700
-		steel=700
-		chromium=700
+		steel = 60
+		aluminium = 60
+		rubber = 60
+		tungsten = 60
+		oil = 80
 	}
    	history = {
 	owner = REP

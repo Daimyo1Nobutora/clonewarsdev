@@ -1,4 +1,4 @@
-###Jabiim
+###Raxus
 state={
 	id=10
 	name="STATE_10"
@@ -8,7 +8,13 @@ state={
 	manpower=10000000
 	buildings_max_level_factor=1.000
     state_category = rural
-
+	resources={
+		steel = 60
+		aluminium = 60
+		rubber = 60
+		tungsten = 60
+		oil = 80
+	}
    	 history = {
 	owner = CIS
 	buildings = {

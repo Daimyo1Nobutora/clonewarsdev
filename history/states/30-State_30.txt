@@ -1,4 +1,4 @@
-###neimodia
+###cato neimodia
 state={
 	id=30
 	name="STATE_30"
@@ -8,6 +8,11 @@ state={
 	manpower=8500000
 	buildings_max_level_factor=1.000
 	state_category = city
+	resources={
+		steel = 10
+		rubber = 15
+		oil = 10
+	}
    	history = {
 	owner = CIS
 	buildings = {

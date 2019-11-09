@@ -8,7 +8,11 @@ state={
 	manpower=2000000000
 	buildings_max_level_factor=1.000
 	state_category = city
-
+	resources={
+		steel = 15
+		aluminium = 15
+		oil = 15
+	}
    	 history = {
 	owner = ALD
 	buildings = {

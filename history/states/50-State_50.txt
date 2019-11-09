@@ -1,3 +1,4 @@
+###Ryloth
 state={
 	id=50
 	name="STATE_50"
@@ -7,6 +8,13 @@ state={
 	manpower=15000000000
 	buildings_max_level_factor=1.000
     state_category = town
+	resources={
+		steel = 40
+		aluminium = 10
+		rubber = 20
+		tungsten = 10
+		oil = 30
+	}
    	history = {
 	owner = RYL
 	buildings = {

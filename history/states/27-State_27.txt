@@ -8,6 +8,13 @@ state={
 	manpower=5000000
 	buildings_max_level_factor=1.000
     state_category = metropolis
+	resources={
+		steel = 24
+		aluminium = 40
+		rubber = 24
+		tungsten = 40
+		oil = 50
+	}
    	history = {
 	owner = CIS
 	buildings = {

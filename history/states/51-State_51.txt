@@ -8,6 +8,13 @@ state={
 	manpower=1
 	buildings_max_level_factor=1.000
     state_category = metropolis
+	resources={
+		steel = 80
+		aluminium = 30
+		rubber = 20
+		tungsten = 10
+		oil = 20
+	}
   	history = {
 		buildings = {
 			infrastructure = 6

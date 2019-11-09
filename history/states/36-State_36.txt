@@ -8,6 +8,13 @@ state={
 	manpower=4000000000
 	buildings_max_level_factor=1.000
     state_category = city
+	resources={
+		steel = 30
+		aluminium = 30
+		rubber = 30
+		tungsten = 30
+		oil = 40
+	}
    	history = {
 	owner = ATZ
 	buildings = {

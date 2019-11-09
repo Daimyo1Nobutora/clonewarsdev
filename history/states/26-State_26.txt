@@ -8,6 +8,13 @@ state={
 	manpower=10000000
 	buildings_max_level_factor=1.000
     state_category = rural
+	resources={
+		steel = 10
+		aluminium = 10
+		rubber = 10
+		tungsten = 10
+		oil = 10
+	}
     history = {
 	buildings = {
 		infrastructure = 5
