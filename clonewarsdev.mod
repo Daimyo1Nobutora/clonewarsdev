@@ -1,5 +1,5 @@
 name="Star Wars: The Clone Wars - Dev build"
-archive="mod/clonewarsdev/"
+path="mod/clonewarsdev/"
 tags={
 	"Gameplay"
 	"Map"
