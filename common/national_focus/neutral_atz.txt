@@ -43,7 +43,7 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ATZ_neutrality }
+		prerequisite = { focus = ATZ_neutral_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -60,6 +60,9 @@ focus_tree = {
 		prerequisite = { focus = ATZ_volunteers }
 		ai_will_do = {
 			factor = 1
+		}
+			completion_reward = {
+			add_ideas = NET_fortify_the_borders
 		}
 	}
 
@@ -79,7 +82,7 @@ focus_tree = {
 
 	#Focus for Neutrality
 	focus = {
-		id = ATZ_neutrality
+		id = ATZ_neutral_focus
 		icon = GFX_goal_unknown
 		x = 25
 		y = 3
@@ -98,26 +101,52 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 22
 		y = 3
-		cost = 10
+		cost = 20
 		available_if_capitulated = yes
 		prerequisite = { focus = ATZ_separatistalignment }
-		mutually_exclusive = { focus = ATZ_neutrality }
+		mutually_exclusive = { focus = ATZ_neutral_focus }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		diplomatic_relation = {
+		   country = CIS
+			relation = non_aggression_pact
+			}
+		add_opinion_modifier = { target = CIS modifier = medium_increase }
+		add_ideas = NET_fascist_influence
+		add_ideas = NET_dooku_opinion		
 		}
 	}
 
 	#Focus for Petition to join the Separatists
 	focus = {
 		id = ATZ_petitiontojointheseparatists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_alliance
 		x = 22
 		y = 4
-		cost = 10
+		cost = 15
 		available_if_capitulated = yes
 		prerequisite = { focus = ATZ_contactcountdooku }
 		ai_will_do = {
 			factor = 1
+		}
+		
+		available = {
+		NOT = { has_war_with = CIS }
+		is_subject = no
+		is_in_faction = no
+				NOT = {
+				any_other_country = {
+				is_in_faction_with = CIS
+				has_war_with = ATZ	
+				}
+			}
+		}
+		completion_reward = {
+				CIS = {
+				country_event = generic.2
+			}
 		}
 	}
 
@@ -380,7 +409,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+				CIS = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+					}
+				}
+				REP = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+		add_popularity = { ideology = democratic popularity = 0.5 }
+		add_political_power = 50
 	}
+}
 
 	#Focus for Army Reforms
 	focus = {
@@ -392,6 +437,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -762,6 +816,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Focus for Clones Arrival
@@ -813,6 +870,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+				CIS = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				REP = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+					}
+				}
+			}
+		add_popularity = { ideology = neutrality popularity = 0.3 }
+		add_popularity = { ideology = fascism popularity = 0.2 }
+		add_political_power = 50
+		}
 	}
 
 	#Focus for Extra Researches
@@ -852,11 +926,20 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 3
-		cost = 10
+		cost = 20
 		available_if_capitulated = yes
 		prerequisite = { focus = ATZ_libertyalignment }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		diplomatic_relation = {
+		   country = REP
+			relation = non_aggression_pact
+			}
+		add_opinion_modifier = { target = REP modifier = medium_increase }	
+		add_ideas = NET_democratic_influence
+		add_ideas = NET_trade_opinions
 		}
 	}
 

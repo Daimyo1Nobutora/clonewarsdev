@@ -1,4 +1,4 @@
-name="Star Wars: The Clone Wars - Dev build"
+﻿name="Star Wars: The Clone Wars - Dev build"
 path="mod/clonewarsdev/"
 tags={
 	"Gameplay"
