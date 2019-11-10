@@ -19,6 +19,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+		NOT = { has_war_with = REP }
+		is_subject = no
+		is_in_faction = no
+				NOT = {
+				any_other_country = {
+				is_in_faction_with = REP
+				has_war_with = ATZ	
+				}
+			}
+		}
+		completion_reward = {
+				REP = {
+				country_event = generic.2
+			}
+		}
+
 	}
 
 	#Focus for A new era
@@ -923,7 +940,7 @@ focus_tree = {
 	#Focus for Negotiations with The Republic
 	focus = {
 		id = ATZ_negotiationswiththerepublic
-		icon = GFX_goal_unknown
+		icon = GFX_focus_net_deal_republic
 		x = 19
 		y = 3
 		cost = 20
