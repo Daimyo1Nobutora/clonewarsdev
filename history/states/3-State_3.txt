@@ -16,7 +16,7 @@ state={
 		oil = 24
 	}
   	history = {
-		owner = REP
+		owner = ITH
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
@@ -24,6 +24,6 @@ state={
 			dockyard = 2
 			air_base = 4
 		}
-		add_core_of = REP
+		add_core_of = ITH
 	}
 }

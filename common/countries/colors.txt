@@ -67,3 +67,11 @@ HON = {
 	color = rgb { 190 190 10 }
 	color_ui = rgb { 200 200 30 }
 }
+ITH = {
+	color = rgb { 155 55 07 }
+	color_ui = rgb { 175 75 27 }
+}
+HON = {
+	color = rgb { 190 200 10 }
+	color_ui = rgb { 210 220 30 }
+}

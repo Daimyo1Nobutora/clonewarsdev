@@ -14,6 +14,7 @@ state={
 		oil = 30
 	}
    	history = {
+		owner = HUT
 	buildings = {
 		infrastructure = 2
 		arms_factory = 3
@@ -27,5 +28,6 @@ state={
 		     naval_base = 4
 			}
 		}
+		add_core_of = HUT
 	}
 }
