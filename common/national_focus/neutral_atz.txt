@@ -10,7 +10,7 @@ focus_tree = {
 	#Focus for For the Republic!
 	focus = {
 		id = ATZ_fortherepublic
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_alliance
 		x = 19
 		y = 4
 		cost = 10
@@ -86,7 +86,7 @@ focus_tree = {
 	#Focus for Droid Armed Forces
 	focus = {
 		id = ATZ_droidarmedforces
-		icon = GFX_goal_unknown
+		icon = GFX_focus_net_droids
 		x = 22
 		y = 5
 		cost = 10
@@ -94,6 +94,15 @@ focus_tree = {
 		prerequisite = { focus = ATZ_petitiontojointheseparatists }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 1000
+			add_political_power = 100
+			army_experience = 30
+			custom_effect_tooltip = net_droids_loc
+			hidden_effect = {
+				load_oob = "net_droids"
+			}
 		}
 	}
 
@@ -115,7 +124,7 @@ focus_tree = {
 	#Focus for Contact Count Dooku
 	focus = {
 		id = ATZ_contactcountdooku
-		icon = GFX_goal_unknown
+		icon = GFX_focus_net_dooku
 		x = 22
 		y = 3
 		cost = 20
@@ -139,7 +148,7 @@ focus_tree = {
 	#Focus for Petition to join the Separatists
 	focus = {
 		id = ATZ_petitiontojointheseparatists
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_focus_net_deal_cis
 		x = 22
 		y = 4
 		cost = 15
@@ -849,6 +858,15 @@ focus_tree = {
 		prerequisite = { focus = ATZ_fortherepublic }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 1000
+			add_political_power = 100
+			army_experience = 20
+			custom_effect_tooltip = net_clones_loc
+			hidden_effect = {
+				load_oob = "net_clones"
+			}
 		}
 	}
 

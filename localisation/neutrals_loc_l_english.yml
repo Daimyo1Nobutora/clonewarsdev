@@ -1,4 +1,5 @@
 ﻿l_english:
+###Focuses descriptions###
 ATZ_fortherepublic:0 "For the Republic!"
 ATZ_fortherepublic_desc:0 ""
 ATZ_anewera:0 "A new era"
@@ -117,3 +118,6 @@ ATZ_owndesigns:0 "Own Designs"
 ATZ_owndesigns_desc:0 ""
 ATZ_formforeignbrigades:0 "Form foreign Brigades"
 ATZ_formforeignbrigades_desc:0 ""
+###OOBS###
+net_clones_loc: "Clone reinforcements will be available."
+net_droids_loc: "Several B1 Battle droids will be deployed."
