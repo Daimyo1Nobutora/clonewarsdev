@@ -137,5 +137,45 @@ equipments = {
 		}		
 		manpower = 10000
 	}
-	
+
+	carrier_4 = {
+		year = 1944
+
+		archetype = carrier
+		parent = carrier_3
+		priority = 40
+		type = carrier
+		carrier_size = 250
+
+		ap_attack = 20
+		attack = 20
+		fire_range = 30
+		torpedo_attack = 0
+		shore_bombardment = 8
+		
+		anti_air_attack = 20
+		
+		armor_value = 24
+		evasion = 26
+		
+		surface_detection = 30
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 36
+		reliability = 0.93
+
+		naval_range = 6000
+		
+		max_strength = 200
+		
+		port_capacity_usage = 1
+
+		build_cost_ic = 5400
+		resources = {
+			oil = 5
+			steel = 8
+		}		
+		manpower = 17000
+	}
+
 }

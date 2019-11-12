@@ -104,7 +104,36 @@ technologies = {
 			dd_tech
 		}
 	}
-	
+
+	advanced_destroyer = {
+
+		enable_equipments = { 
+			destroyer_4
+		}
+		
+		research_cost = 2
+
+		start_year = 1944
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}	
 	
 	early_light_cruiser = {
 
@@ -563,7 +592,43 @@ technologies = {
 		}
 	}
 
-	
+	advanced_carrier = {
+
+		enable_equipments = { 
+			carrier_4
+		}
+
+		
+		research_cost = 2
+
+		start_year = 1944
+		
+		folder = {
+			name = naval_folder
+			position = { x = 3 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}	
+
+
 	######## JAPAN FOCUS TREE UNLOCK ########
 	torpedo_cruiser = {
 
