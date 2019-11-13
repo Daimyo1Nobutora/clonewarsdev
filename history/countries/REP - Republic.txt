@@ -99,8 +99,17 @@ give_guarantee = CRL
 give_military_access = CRL
 
 create_country_leader = {
+	name = "Finis Valorum"
+	desc = ""
+	picture = "gfx/leaders/REP/REP_Valorum.tga"
+	expire = "2020.1.1"
+	ideology = conservatism
+	traits = {ß
+	}
+
+create_country_leader = {
 	name = "Sheev Palpatine"
-	desc = "The newly elected Chancellor of the Galactic Republic"
+	desc = ""
 	picture = "gfx/leaders/REP/palpatine.dds"
 	expire = "2020.1.1"
 	ideology = conservatism
