@@ -52,9 +52,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Tarfful"
-	desc = "Wookiee Tribe Leader"
-	picture = "gfx/leaders/KYK/tarfful.dds"
+	name = "Grakchawwaa"
+	desc = ""
+	picture = "gfx/leaders/KYK/KYK_Grakchawwaa.tga"
 	expire = "2020.1.1"
 	ideology = conservatism
 	traits = {

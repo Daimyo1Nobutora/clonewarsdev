@@ -53,8 +53,8 @@ set_politics = {
 
 create_country_leader = {
 	name = "Satine Kryze"
-	desc = "Duchess of Mandalore"
-	picture = "gfx/leaders/MAN/satine.dds"
+	desc = ""
+	picture = "gfx/leaders/MAN/MAN_Satine.tga"
 	expire = "2020.1.1"
 	ideology = conservatism
 	traits = {
